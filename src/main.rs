@@ -9,7 +9,6 @@ mod util;
 
 fn main() -> io::Result<()> {
 
-    let mut file = File::open("smaller_file.txt")?;
 
     // Bind the server to a socket address
     let listener = TcpListener::bind("127.0.0.1:2828")?;
@@ -20,7 +19,7 @@ fn main() -> io::Result<()> {
             // Handle each incoming connection
             Ok(stream) => {
                 println!("New connection: {}", stream.peer_addr()?);
-                handle_client(stream, file)?;
+                handle_client(stream, File::open("smaller_file.txt")?)?;
             }
             // Handle errors
             Err(e) => {
