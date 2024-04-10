@@ -1,0 +1,19 @@
+{
+  "name": "multinite-web-server",
+  "version": "alpha-0.0.1",
+  "description": "A framework to host your Multinite-Web website.",
+  "private": false,
+  "repository": {
+    "url": "https://github.com/Multinite/multinite-web-server"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "multinite",
+    "multinite-web"
+  ],
+  "author": "Multinite",
+  "license": "ISC"
+}
